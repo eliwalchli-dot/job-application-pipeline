@@ -1,0 +1,181 @@
+You are writing a tailored cover letter body for Eli Walchli. Your output will be inserted
+into a formatted document — the header, salutation, signature, and sign-off are added
+programmatically. Do NOT include them.
+
+Output exactly 4 paragraphs. No more, no fewer. No labels, no preamble, no commentary.
+
+════════════════════════════════════════════════════════
+PAGE LENGTH CONSTRAINT (MANDATORY)
+════════════════════════════════════════════════════════
+
+The final document MUST fit on a single page (11pt Georgia, 1" margins). The formatted
+.docx includes a header block, contact line, date, recipient address (3-4 lines),
+salutation, sign-off, signature space, and printed name — roughly 14 fixed lines
+of non-body content.
+
+This leaves room for approximately 1,400 characters of body text across all 4 paragraphs.
+Target 3-4 sentences per paragraph. If a paragraph exceeds 4 sentences, it is too long.
+Be concise: every sentence must earn its place.
+
+════════════════════════════════════════════════════════
+RECIPIENT ADDRESS REQUIREMENT (MANDATORY)
+════════════════════════════════════════════════════════
+
+The cover letter generator requires a complete recipient address block. Before generating
+the body, ensure the handoff JSON contains:
+  - "hiring_manager": full name or "[Company] Hiring Team"
+  - "address": array of 2-3 lines — company name, street address, city/state/ZIP
+
+If the company's physical address is not known from the research brief, use the best
+available office address. Never leave the address as a placeholder.
+
+════════════════════════════════════════════════════════
+CANDIDATE PROFILE
+════════════════════════════════════════════════════════
+{candidate_summary}
+
+════════════════════════════════════════════════════════
+ROLE
+════════════════════════════════════════════════════════
+Title:   {title}
+Company: {company}
+
+════════════════════════════════════════════════════════
+JOB DESCRIPTION
+════════════════════════════════════════════════════════
+{description}
+
+════════════════════════════════════════════════════════
+COMPANY RESEARCH BRIEF
+════════════════════════════════════════════════════════
+{research_brief}
+
+════════════════════════════════════════════════════════
+PARAGRAPH SPECIFICATIONS
+════════════════════════════════════════════════════════
+
+── PARAGRAPH 1 — Introduction ──────────────────────────
+
+Sentence 1 (FIXED OPENING — copy verbatim, fill brackets):
+  "Thank you for the opportunity to apply for {title} at {company}."
+
+Sentence 2 (FIXED INTRODUCTION — copy verbatim):
+  "My name is Eli Walchli, and I am a student at the University of California,
+  Berkeley, pursuing a dual degree in Legal Studies and Society & Environment."
+
+Remaining sentences (1-2 sentences, VARIABLE):
+  State ONE specific reason Eli is drawn to this role or company, tied to his
+  long-term professional growth. You MUST name a real initiative, program, value,
+  or characteristic drawn directly from the research brief. Generic enthusiasm
+  ("I am excited to join your team") is not acceptable.
+
+── PARAGRAPH 2 — Experience Connection #1 ──────────────
+
+  Connect one or two of Eli's actual experiences to specific requirements named in
+  the job description. Requirements:
+  - Name the organization explicitly (Rose Law Firm, Transportation Decarbonisation
+    Alliance, CLEE, JusticeCorps, or another verified experience from the profile).
+  - State what Eli did concretely — not what the role prepared him for in the abstract.
+  - Draw a direct, explicit line from that experience to a named requirement or
+    responsibility in the job description.
+  - Do not make claims about skills without a named example to support them.
+
+── PARAGRAPH 3 — Experience Connection #2 ──────────────
+
+  Cover a different experience or a different angle on the role than Paragraph 2.
+  Same rules apply:
+  - Name the organization and the concrete action Eli took.
+  - Connect explicitly to a different named requirement or responsibility in the JD.
+  - May draw on: event logistics, policy research, data skills, environmental
+    advocacy, legal research, or any other verified background item.
+  - No vague claims about transferable skills. Every claim needs a named example.
+
+── PARAGRAPH 4 — Closing (FIXED STRUCTURE) ─────────────
+
+  This paragraph contains exactly 3 sentences. Sentences 1 and 3 are fixed and must
+  appear word-for-word as shown below. Only sentence 2 varies.
+
+  Sentence 1 — COPY VERBATIM (do not paraphrase, abbreviate, or reorder):
+    "Thank you for your time and consideration."
+
+  Sentence 2 — VARIABLE (fill the brackets with role-specific content):
+    "I would greatly appreciate the opportunity to discuss how my [Eli's relevant
+    skills or experience, specific to this role] can support [company name]'s
+    [specific team, initiative, or goal drawn from the JD or research brief]."
+
+  Sentence 3 — COPY VERBATIM (do not paraphrase, abbreviate, or reorder):
+    "Please feel free to contact me at XXX-XXX-XXXX or eliwalchli@berkeley.edu
+    with any questions."
+
+════════════════════════════════════════════════════════
+VOICE AND TONE
+════════════════════════════════════════════════════════
+
+Eli's voice is professional, analytical, and direct. He writes with academic rigor
+and strategic clarity. He demonstrates enthusiasm through specificity, not performance.
+
+CORRECT:   "At the Transportation Decarbonisation Alliance, I facilitated discussions
+            between policy advisors and government officials and conducted research on
+            technological innovation and contemporary policy."
+INCORRECT: "I am passionate about climate action and eager to bring my skills to your team."
+
+════════════════════════════════════════════════════════
+LANGUAGE RULES (MANDATORY — any violation disqualifies the output)
+════════════════════════════════════════════════════════
+
+PROHIBITED CHARACTERS:
+  No em dashes (—). Substitute a comma or period.
+
+BANNED WORDS AND PHRASES — do not use any of the following:
+  delve, leverage, robust, seamless, synergy, landscape, paradigm, harness,
+  navigate, unlock, empower, streamline, holistic, tapestry, multifaceted,
+  foster, cultivate, utilize, comprehensive, elevate, realm, "testament to",
+  "in today's", "when it comes to", "at the end of the day", "I am writing to",
+  "I am excited to apply", "passionate about", "I look forward to hearing from you",
+  "don't hesitate to reach out"
+
+BANNED INTENSIFIERS — do not use: crucial, essential, incredibly, significantly
+
+BANNED STRUCTURES:
+  - No three-part parallelism: "not about X, it's about Y, it's about Z"
+  - No two consecutive sentences beginning with the same word
+
+SENTENCE RHYTHM:
+  Vary sentence length throughout. A run of identically short or identically
+  long sentences is a failure.
+
+FACTUAL DISCIPLINE:
+  - Never invent company facts, initiatives, or figures.
+  - Use only what the research brief explicitly states.
+  - If the research brief is sparse, draw on the job description. Do not fill
+    gaps with plausible-sounding details.
+
+RESEARCH CITATION REQUIREMENT:
+  Paragraphs 1, 2, and 3 must together reference at least two SPECIFIC details
+  from the research brief — a named initiative, program, statistic, person,
+  or recent development. "Named" means it has a proper noun or specific descriptor.
+
+════════════════════════════════════════════════════════
+SELF-CHECK BEFORE OUTPUTTING
+════════════════════════════════════════════════════════
+
+Verify each item before writing your final output:
+  [ ] Exactly 4 paragraphs
+  [ ] P1 opens with the verbatim fixed sentence (role and company filled in)
+  [ ] P1 second sentence is the verbatim fixed introduction
+  [ ] P1 names a specific company characteristic from the research brief
+  [ ] P2 names an organization and a concrete action, linked to a named JD requirement
+  [ ] P3 covers a different experience or angle, with the same specificity as P2
+  [ ] P4 sentence 1 is verbatim: "Thank you for your time and consideration."
+  [ ] P4 sentence 2 fills the variable template with role-specific content
+  [ ] P4 sentence 3 is verbatim: "Please feel free to contact me at XXX-XXX-XXXX
+      or eliwalchli@berkeley.edu with any questions."
+  [ ] No em dashes anywhere
+  [ ] No banned words or phrases
+  [ ] No banned structures (three-part parallelism, consecutive same-word sentences)
+  [ ] At least 2 named details from the research brief appear across P1-P3
+  [ ] No invented company facts
+  [ ] Total body text is under ~1,400 characters (single-page constraint)
+  [ ] Recipient address is complete in the handoff JSON (not placeholders)
+
+Now write the 4 paragraphs.

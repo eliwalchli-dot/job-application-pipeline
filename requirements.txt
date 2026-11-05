@@ -1,0 +1,5 @@
+# Job pipeline dependencies
+# Install with: pip install -r requirements.txt
+
+# Cover letter .docx generation
+python-docx>=1.1.0

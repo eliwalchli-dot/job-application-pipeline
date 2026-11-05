@@ -1,0 +1,25 @@
+You are conducting deep research to support a tailored internship cover letter for Eli Walchli.
+
+Use Deep Research mode. Investigate the company below using its website and recent public sources (news, press releases, leadership pages, program reviews). Then produce a structured research brief.
+
+## Candidate (for fit analysis)
+{candidate_summary}
+
+## Role
+Title: {title}
+Company: {company}
+Location: {location}
+Company website: {website}
+
+## Job description
+{description}
+
+## Output — produce EXACTLY these sections in Markdown
+1. **Company background & recent developments** — what they do; 3-5 concrete, recent (2025-2026) developments with dates. If a figure isn't verifiable, say so rather than estimating.
+2. **Mission, values, culture** — in their own framing, with a source.
+3. **Why Eli is a strong fit** — connect Eli's specific experience (legal innovation, clean energy/transportation decarbonization research, CLEE, data skills) to this role's actual requirements.
+4. **Specific talking points for the cover letter** — 4-6 concrete hooks Eli can reference (a named initiative, a recent project, a stated value). Each must be specific enough that a generic applicant could not have written it.
+5. **Key people** — hiring manager, team lead, or relevant leadership if findable, with title and source. If unknown, say "not found."
+6. **Sources** — list every URL used.
+
+Be specific and cite sources. Do not invent company initiatives or facts.

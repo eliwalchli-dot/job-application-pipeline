@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "description": "Screening weights and tier thresholds. Implements Section 4 of the architecture doc. Max composite = 40.",
+  "dimensions": {
+    "field_alignment": {
+      "max": 10,
+      "what": "Match to legal / policy / clean energy / sustainability law / real estate / legal tech."
+    },
+    "location_fit": {
+      "max": 10,
+      "what": "Berkeley/SF/Oakland/Bay Area/remote score high; other locations low unless exceptional."
+    },
+    "timing": {
+      "max": 10,
+      "what": "Deadline proximity + start-date alignment with the academic calendar."
+    },
+    "compensation": {
+      "max": 5,
+      "what": "Paid > stipend > unpaid, adjusted for cost of living."
+    },
+    "growth_signal": {
+      "max": 5,
+      "what": "Brand recognition, skill development, network value."
+    }
+  },
+  "composite_max": 40,
+  "tiers": {
+    "auto_apply": { "min": 30, "label": "Auto-apply", "action": "research + generate + apply" },
+    "review":     { "min": 20, "max": 29, "label": "Review", "action": "flag for Eli's daily review" },
+    "skip":       { "max": 19, "label": "Skip", "action": "log only" }
+  },
+  "scoring_detail": {
+    "location": {
+      "preferred_points": 10,
+      "remote_points": 9,
+      "bay_area_points": 7,
+      "ca_other_points": 3,
+      "us_other_points": 2,
+      "international_points": 1,
+      "note": "Preferred: Berkeley, SF, Oakland, Remote. Bay Area (~15mi Berkeley) acceptable. Portland and other out-of-area locations score low."
+    },
+    "compensation": {
+      "paid_points": 5,
+      "stipend_points": 3,
+      "unknown_points": 2,
+      "unpaid_points": 0
+    },
+    "growth_default": 3,
+    "field": {
+      "strong_match_points": 10,
+      "per_keyword_points": 2,
+      "negative_keyword_penalty": 4
+    },
+    "timing": {
+      "open_aligned_points": 8,
+      "deadline_soon_bonus": 2,
+      "deadline_far_points": 6,
+      "no_deadline_points": 5,
+      "expired_points": 0,
+      "soon_days": 21
+    }
+  }
+}

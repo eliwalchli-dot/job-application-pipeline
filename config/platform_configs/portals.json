@@ -1,0 +1,42 @@
+{
+  "platforms": {
+    "greenhouse": {
+      "daily_cap": 10,
+      "auto_approve": false,
+      "agent_max_steps": 25,
+      "note": "Pause before final submit. Greenhouse forms are usually 3-4 screens."
+    },
+    "lever": {
+      "daily_cap": 10,
+      "auto_approve": false,
+      "agent_max_steps": 20,
+      "note": "Lever forms are single-page and relatively clean."
+    },
+    "workday": {
+      "daily_cap": 5,
+      "auto_approve": false,
+      "agent_max_steps": 30,
+      "note": "Workday is highly variable. Many steps, custom questions, auto-save quirks. Expect failures; fall back to manual."
+    },
+    "idealist": {
+      "daily_cap": 10,
+      "auto_approve": false,
+      "agent_max_steps": 15,
+      "note": "Idealist usually redirects to org's own application form — detect and handle redirect."
+    },
+    "indeed": {
+      "daily_cap": 3,
+      "auto_approve": false,
+      "agent_max_steps": 20,
+      "note": "Indeed Apply forms vary widely. Low cap; high manual review."
+    },
+    "unknown": {
+      "daily_cap": 2,
+      "auto_approve": false,
+      "agent_max_steps": 15,
+      "note": "Unknown platform — always require manual approval."
+    }
+  },
+  "never_automate": ["handshake.com"],
+  "note": "All non-LinkedIn platforms require manual approval before submission. noVNC takeover URL is printed for review."
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-08",
+  "source": "digital_passport_eli_walchli.md",
+  "identity": {
+    "name": "Eli Walchli",
+    "email": "eliwalchli@berkeley.edu",
+    "phone": "XXX-XXX-XXXX",
+    "location": "Portland, OR",
+    "linkedin": "www.linkedin.com/in/eli-walchli"
+  },
+  "education": {
+    "school": "University of California, Berkeley",
+    "level": "Undergraduate",
+    "majors": [
+      "Legal Studies",
+      "Society & Environment"
+    ],
+    "affiliations": [
+      "Center for Law, Energy, and the Environment (CLEE)"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Legal Innovation Fellow",
+      "org": "Rose Law Firm",
+      "themes": [
+        "legal tech",
+        "AI-driven document workflows",
+        "process automation"
+      ]
+    },
+    {
+      "title": "Legal Access Intern",
+      "org": "JusticeCorps",
+      "themes": [
+        "legal access",
+        "self-help",
+        "court navigation"
+      ]
+    },
+    {
+      "title": "Research Fellow",
+      "org": "Transportation Decarbonisation Alliance",
+      "themes": [
+        "clean energy policy",
+        "transportation decarbonization",
+        "research"
+      ]
+    }
+  ],
+  "skills": {
+    "data_science": [
+      "Python",
+      "Pandas",
+      "Folium",
+      "OLS / causal inference",
+      "time-series cleaning"
+    ],
+    "legal_tech": [
+      "LexisNexis",
+      "Westlaw",
+      "AI-integrated document workflows"
+    ],
+    "productivity": [
+      "Microsoft Office",
+      "Notion",
+      "LLM-assisted research synthesis (Claude/Gemini)"
+    ]
+  },
+  "voice": {
+    "tone": "Professional, analytical, goal-oriented",
+    "style": "Academic rigor combined with strategic, high-impact messaging",
+    "formatting_pref": "Clean, structured, logical flow"
+  },
+  "interests": [
+    "clean energy",
+    "transportation decarbonization",
+    "sustainability law",
+    "climate policy",
+    "legal innovation",
+    "civic tech",
+    "real estate",
+    "constitutional law"
+  ],
+  "notable_projects": [
+    "Mining pollution impacts in Chile using socioeconomic data",
+    "Analytical essays on SCOTUS decisions (e.g., Dobbs v. Jackson)",
+    "Recap content for clean energy keynotes and panels"
+  ],
+  "screening_preferences": {
+    "focus_areas": [
+      "legal",
+      "policy",
+      "advocacy",
+      "clean energy",
+      "sustainability law",
+      "transportation decarbonization",
+      "climate",
+      "real estate",
+      "legal tech",
+      "civic tech",
+      "energy"
+    ],
+    "focus_keywords": [
+      "legal",
+      "law",
+      "policy",
+      "energy",
+      "clean energy",
+      "climate",
+      "sustainability",
+      "environment",
+      "decarbonization",
+      "real estate",
+      "advocacy",
+      "regulatory",
+      "government",
+      "public",
+      "research analyst",
+      "legal tech",
+      "compliance",
+      "civic"
+    ],
+    "negative_keywords": [
+      "pure engineering",
+      "software engineer",
+      "hardware",
+      "HR",
+      "recruiter",
+      "IT support",
+      "sales quota",
+      "capital markets trading"
+    ],
+    "preferred_locations": [
+      "Berkeley CA",
+      "San Francisco CA",
+      "Oakland CA",
+      "Remote"
+    ],
+    "greater_bay_area": [
+      "Emeryville CA",
+      "Richmond CA",
+      "Alameda CA",
+      "San Mateo CA",
+      "Palo Alto CA",
+      "Redwood City CA",
+      "South San Francisco CA",
+      "Daly City CA",
+      "San Leandro CA",
+      "Hayward CA",
+      "Walnut Creek CA",
+      "Concord CA",
+      "Fremont CA",
+      "San Rafael CA",
+      "Mill Valley CA",
+      "Sausalito CA",
+      "Burlingame CA"
+    ],
+    "acceptable_remote": true,
+    "location_note": "Bay Area only (Berkeley, SF, Oakland, or Remote). No out-of-area locations — DC, Portland, Eugene, etc. are all hard fails.",
+    "role_types": [
+      "internship",
+      "fellowship",
+      "extern",
+      "entry level",
+      "analyst"
+    ],
+    "compensation_pref": "paid preferred; stipend acceptable; unpaid only if exceptional",
+    "academic_calendar": {
+      "fall_window": "September-December 2026",
+      "fall_spring_window": "September 2026 - May 2027",
+      "summer_2027_window": "May-August 2027",
+      "note": "Targeting fall 2026, fall/spring 2026-27, or summer 2027 roles. Summer 2026 roles are hard fails."
+    }
+  }
+}

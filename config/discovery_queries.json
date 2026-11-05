@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.1",
+  "description": "Search queries for daily job discovery. Updated 2026-06-09: no summer 2026, focus on fall 2026 / spring 2027 / summer 2027. Bay Area + remote only (no Portland). Apify LinkedIn scraper removed 2026-08-17 (now paid).",
+  "tavily": {
+    "searches": [
+      {
+        "id": "clean-energy-intern",
+        "query": "clean energy internship fall 2026 OR spring 2027 OR summer 2027 Berkeley OR San Francisco OR Oakland OR Bay Area OR remote",
+        "include_domains": [
+          "linkedin.com",
+          "indeed.com",
+          "climatebase.org",
+          "idealist.org"
+        ],
+        "max_results": 10,
+        "time_range": "day"
+      },
+      {
+        "id": "legal-policy-intern",
+        "query": "legal intern OR policy intern OR legal fellow fall 2026 OR 2027 Berkeley OR San Francisco OR Oakland OR Bay Area OR remote environmental OR energy OR climate",
+        "include_domains": [
+          "linkedin.com",
+          "indeed.com",
+          "idealist.org"
+        ],
+        "max_results": 10,
+        "time_range": "day"
+      },
+      {
+        "id": "sustainability-law",
+        "query": "sustainability law intern OR environmental law intern OR climate policy intern fall 2026 OR 2027 California OR remote",
+        "include_domains": [
+          "linkedin.com",
+          "indeed.com",
+          "idealist.org"
+        ],
+        "max_results": 10,
+        "time_range": "day"
+      },
+      {
+        "id": "real-estate-legal",
+        "query": "real estate legal intern OR real estate policy intern fall 2026 OR 2027 Berkeley OR San Francisco OR Oakland OR Bay Area OR remote",
+        "include_domains": [
+          "linkedin.com",
+          "indeed.com"
+        ],
+        "max_results": 5,
+        "time_range": "day"
+      },
+      {
+        "id": "broad-job-boards",
+        "query": "intern clean energy OR sustainability OR environmental policy fall 2026 OR 2027",
+        "include_domains": [
+          "usajobs.gov",
+          "climatebase.org"
+        ],
+        "max_results": 10,
+        "time_range": "week"
+      }
+    ],
+    "note": "No summer 2026 roles. Targeting fall 2026, spring 2027, summer 2027. Bay Area + remote only."
+  },
+  "apify_linkedin_removed": {
+    "date": "2026-08-17",
+    "reason": "Apify now charges per LinkedIn Jobs Scraper run. Removed per Eli. LinkedIn/Indeed/Idealist coverage handled by the Tavily + WebSearch step (see tavily.searches include_domains)."
+  }
+}

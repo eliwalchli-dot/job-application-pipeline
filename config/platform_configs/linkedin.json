@@ -1,0 +1,9 @@
+{
+  "platform": "linkedin_easy_apply",
+  "daily_cap": 5,
+  "auto_approve": true,
+  "auth_profile": "linkedin-default",
+  "agent_max_steps": 20,
+  "note": "LinkedIn Easy Apply is auto-approved up to daily_cap. Apply via LinkedIn job URLs only. Never automate Handshake (UC Berkeley account at risk per TOS).",
+  "blocked_platforms": ["handshake.com"]
+}
